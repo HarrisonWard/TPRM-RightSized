@@ -1,118 +1,138 @@
 # TPRM Right-Sized
 
-Third-party risk management that a mid-market company can actually run. Vendor tiering, questionnaires that fit on two pages, a scoring model, contract language, and the part nobody writes about — how to get vendors to respond at all.
+Third-party risk a mid-market company can actually run. Vendor tiering, questionnaires that fit on two pages, a scoring model, contract language, and the part nobody writes about: getting vendors to answer you at all.
 
-Most published TPRM material is either a vendor pitch or built for a 10,000-person enterprise with a dedicated team. If you have 300 employees, 200 vendors, and one person doing this part-time alongside three other jobs, none of it is usable.
+Most published TPRM material is either a vendor pitch or it's built for a 10,000-person company with a dedicated team. If you've got 300 employees, 200 vendors, and one person doing this alongside three other jobs, none of it helps.
 
 ---
 
-## Who this is for
+## Thirty Questions Beat Three Hundred
 
-- Security and IT leaders at mid-market companies who own vendor risk among other things
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="charts/keep-it-simple-dark.svg">
+  <img alt="Response rate drops as the questionnaire gets longer. Thirty questions gets 71 percent back. Three hundred gets 6 percent." src="charts/keep-it-simple-light.svg">
+</picture>
+
+The 300-question vendor questionnaire doesn't measure risk. It measures patience.
+
+Thirty good questions, answered carefully, with two or three followed up in a real conversation, will tell you more about a vendor than any long form ever written. The value is in the follow-up, not the form.
+
+More in [PRINCIPLES.md](https://github.com/HarrisonWard/.github/blob/main/PRINCIPLES.md).
+
+---
+
+## The Numbers Moved
+
+Third-party involvement in breaches went up 60% year over year, and now sits at 48% of all breaches. Roughly half.
+
+Only 23% of third-party organizations fully remediated missing or improperly secured MFA on their cloud accounts. For weak passwords and permission misconfigurations, getting half the findings resolved took almost eight months.
+
+Source: [Verizon 2026 Data Breach Investigations Report](https://www.verizon.com/dbir).
+
+That's the argument for doing this at all. It's also the argument for doing it small enough that you actually finish. Half your breach risk now walks in through somebody else's front door, and a 300-question form is not going to close it.
+
+---
+
+## Who It's For
+
+- Security and IT leaders at mid-market companies who own vendor risk on top of everything else
 - Compliance teams answering "do you assess your vendors" for the first time
-- vCISOs standing up a program for a client who has nothing
-- Anyone who has been handed a 300-question SIG and quietly given up
+- vCISOs standing this up for a client who has nothing
+- Anybody who got handed a 300-question SIG and quietly gave up
 
-## Who this is not for
+## Who It's Not For
 
-- Large enterprises with dedicated TPRM teams and a GRC platform. You need more than this.
-- Anyone looking for a tool or continuous monitoring service. This is process and documents.
+Large enterprises with a TPRM team and a GRC platform. You need more than this.
+
+Anybody looking for a tool. This is process and paper.
 
 ---
 
-## What's inside
+## The Whole Idea
+
+**Most Vendors Don't Need Assessing.**
+
+That's heresy in TPRM circles and it's also true. Assess everybody equally and you'll assess nobody well. The snack supplier and the payroll processor are not the same risk, and treating them the same is how programs collapse.
+
+| Tier | What qualifies | What you do | How often |
+|---|---|---|---|
+| **Critical** | Holds regulated or customer data, or the business stops without them | Full questionnaire, evidence, a call | Annually |
+| **Important** | Some sensitive data, or it hurts if they go down | Short questionnaire, SOC 2 review | Every 2 years |
+| **Routine** | No sensitive data, easily replaced | Attestation, filed | At renewal |
+
+Do this well and you might have 15 critical vendors out of 200. Fifteen is a number one person can handle.
+
+---
+
+## What's in Here
 
 | File | What it is |
 |---|---|
-| `tiering.md` | Criteria for sorting vendors into critical, important, and routine |
-| `questionnaires/critical.md` | ~30 questions. The ones that actually change a decision. |
+| `tiering.md` | Critical, important, routine, and how to tell |
+| `questionnaires/critical.md` | ~30 questions. The ones that change a decision. |
 | `questionnaires/important.md` | ~15 questions |
-| `questionnaires/routine.md` | 5 questions and a request for their SOC 2 |
-| `scoring.md` | How to turn answers into a rating without pretending it's precise |
-| `risk-acceptance.md` | What happens when a vendor fails and you need them anyway |
-| `contracts/security-clauses.md` | Contract language covering breach notification, subprocessors, audit rights, data return |
-| `monitoring.md` | Continuous monitoring on a budget of roughly zero |
-| `chasing.md` | Getting responses out of vendors who ignore you |
-| `onboarding-checklist.md` | The end-to-end flow from request to approved |
+| `questionnaires/routine.md` | Five questions and "send us your SOC 2" |
+| `scoring.md` | Turning answers into a rating without pretending it's precise |
+| `risk-acceptance.md` | When a critical vendor fails and you need them anyway |
+| `contracts/security-clauses.md` | Breach notification, subprocessors, audit rights, data return |
+| `monitoring.md` | Ongoing monitoring on a budget of roughly zero |
+| `chasing.md` | Getting a response out of a vendor who's ignoring you |
+| `onboarding-checklist.md` | Request to approved, end to end |
 
 ---
 
-## The core idea
+## The Part Nobody Writes About
 
-**Most vendors do not need assessing.**
+`chasing.md`. You sent the questionnaire. Nothing came back.
 
-That sentence is heresy in TPRM circles and it is also true. If you assess every vendor equally, you will assess none of them well. The office snack supplier and the payroll processor do not carry the same risk, and treating them the same is how programs collapse.
+Who to send it to, and it's not your account rep. Timing it against contract renewal, because that's the only leverage you've got. What to do when a vendor flat out says no. When to stop chasing the vendor and go talk to your own business owner instead. When to accept it, write it down, and move on.
 
-| Tier | What qualifies | Assessment | Reassess |
-|---|---|---|---|
-| **Critical** | Holds regulated or customer data, or the business stops without them | Full questionnaire + evidence + call | Annually |
-| **Important** | Some sensitive data, or meaningful operational disruption if lost | Short questionnaire + SOC 2 review | Every 2 years |
-| **Routine** | No sensitive data, easily replaced | Attestation, filed | On renewal |
-
-If you do this well, you might have 15 critical vendors out of 200. Fifteen is a number one person can actually handle.
+This is where programs actually die. Not in the framework. In the follow-up email nobody sent.
 
 ---
 
-## Why the questionnaire is 30 questions, not 300
+## On Risk Acceptance
 
-A 300-question assessment produces one of two outcomes. Either the vendor ignores it, or someone in their sales org fills it out in an afternoon with answers optimized for getting past you.
+You're going to find a critical vendor with real problems that the business can't replace. That's normal and it isn't a failure.
 
-Neither tells you anything.
+Your job isn't making the risk go away. Your job is making sure the person who owns that relationship knows what they're accepting, says so in writing, and looks at it again later.
 
-Thirty questions, answered carefully, with two or three followed up by a real conversation, will tell you more about a vendor's security posture than any questionnaire ever written. The value is in the follow-up, not the form.
-
-The critical questionnaire here is built around the questions where a bad answer actually changes your decision. Everything else was cut.
+That's **51% of a Security Program Is Acknowledging the Risk**, applied to vendors. `risk-acceptance.md` covers doing it without turning it into theater.
 
 ---
 
-## The part nobody writes about
+## What This Isn't
 
-`chasing.md` covers the unglamorous reality: you sent the questionnaire, and nothing came back.
+Not legal advice. The contract language is a starting point for a conversation with your counsel, not something to paste into an agreement.
 
-- Who to send it to (hint: not your account rep)
-- Timing it against contract renewal, which is the only leverage you have
-- What to do when a vendor flatly refuses
-- When to escalate to your own business owner instead of the vendor
-- When to accept the risk, document it, and move on
+Third-party oversight requirements vary a lot by sector. Financial services, healthcare, and critical infrastructure all have specific obligations this doesn't cover.
 
-This is where most programs actually fail. Not in the framework. In the follow-up email nobody sends.
-
----
-
-## On risk acceptance
-
-You will find a critical vendor with real gaps that the business cannot replace. This is normal and it is not a failure.
-
-The job is not to eliminate the risk. The job is to make sure the person who owns the business relationship knows what they are accepting, says so in writing, and revisits it. `risk-acceptance.md` covers doing that without turning it into theater.
-
----
-
-## What this is not
-
-Not legal advice. Contract language here is a starting point for discussion with your counsel, not something to paste into an agreement. Regulatory requirements for third-party oversight vary significantly by sector — financial services, healthcare, and critical infrastructure all carry specific obligations this does not address.
-
-Nothing here is drawn from any client engagement.
+Nothing here comes from a client engagement.
 
 ---
 
 ## Contributing
 
-Interested in: sector-specific question sets, contract language that survived actual negotiation, and monitoring approaches that work without a budget.
+Want: sector-specific question sets, contract language that survived a real negotiation, monitoring that works with no budget.
 
-Nothing client-identifiable. No vendor promotion.
+Nothing client-identifiable. No vendor promotion. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
 ## License
 
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Use it, adapt it, use it commercially. Just give credit.
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Use it, change it, use it commercially. Just say where you got it.
 
 © 2026 Harrison Ward
 
 ---
 
-## About
+## Me
 
-Cyber risk and technology executive. Built third-party and supply-chain risk programs for enterprise clients as SVP in Kroll's Cyber Risk practice, and established vendor risk practices as CTO of a multi-office professional services firm.
+Cyber risk and technology exec. Built third-party and supply chain risk programs for enterprise clients as SVP in Kroll's Cyber Risk practice. Set up vendor risk from scratch as CTO of a multi-office firm.
 
-More at [github.com/HarrisonWard](https://github.com/HarrisonWard) · [LinkedIn](https://linkedin.com/in/harrisonaward)
+[github.com/HarrisonWard](https://github.com/HarrisonWard) · [LinkedIn](https://linkedin.com/in/harrisonaward)
+
+---
+
+*Published under [these principles](https://github.com/HarrisonWard/.github/blob/main/PRINCIPLES.md). Security Shouldn't Be Paywalled.*
