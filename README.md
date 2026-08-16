@@ -10,7 +10,7 @@ Most published TPRM material is either a vendor pitch or it's built for a 10,000
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="charts/keep-it-simple-dark.svg">
-  <img alt="Response rate drops as the questionnaire gets longer. Thirty questions gets 71 percent back. Three hundred gets 6 percent." src="charts/keep-it-simple-light.svg">
+  <img alt="Illustrative curve: response rate falls steeply as the questionnaire gets longer." src="charts/keep-it-simple-light.svg">
 </picture>
 
 The 300-question vendor questionnaire doesn't measure risk. It measures patience.
@@ -78,6 +78,8 @@ Do this well and you might have 15 critical vendors out of 200. Fifteen is a num
 | `monitoring.md` | Ongoing monitoring on a budget of roughly zero |
 | `chasing.md` | Getting a response out of a vendor who's ignoring you |
 | `onboarding-checklist.md` | Request to approved, end to end |
+
+This is the deep version of the vendor management slice of [Security-Program-Starter](https://github.com/HarrisonWard/Security-Program-Starter), policy 17, procedure 07, and the register template there. AI vendors get their extra questions from [ai-governance-kit](https://github.com/HarrisonWard/ai-governance-kit), and how to read the SOC 2 a vendor sends you is covered by [the bathroom problem](https://github.com/HarrisonWard/Security-Program-Starter/blob/main/mappings/soc2.md).
 
 ---
 

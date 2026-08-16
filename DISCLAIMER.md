@@ -2,11 +2,13 @@
 
 Read this before you use any of it.
 
-**This Isn't Legal, Regulatory, or Compliance Advice.** Nothing here creates a professional relationship, and none of it replaces advice from a lawyer or a licensed professional where you are.
+**This Isn't Legal, Regulatory, or Compliance Advice.** Nothing here creates a professional relationship, and none of it replaces advice from a lawyer or a licensed professional where you are. The contract language in particular is a conversation starter for counsel, never paste-ready.
 
-**These Are Starting Points, Not Finished Programs.** They won't make you compliant with anything. Adopting a document without adapting it to your own environment is worse than having nothing, because now you've written down a process you don't actually follow.
+**Sector Rules Outrank This Repo.** Financial services, healthcare, and critical infrastructure carry specific third-party oversight obligations, interagency guidance, HIPAA business associate rules, sector regulators with their own questionnaires, that this deliberately does not cover. If you have a regulator, their expectations come first and this kit right-sizes what remains.
 
-**Change Everything.** Your industry, size, jurisdiction, contracts, and regulator all move what's appropriate. Get legal and compliance to look at anything with weight before you adopt it.
+**These Are Templates, Not a Program.** Adopting a document without adapting it is worse than nothing, because a written process you do not follow is evidence against you. The questionnaires especially: delete the questions whose answers would not change your decision, that deletion is the method.
+
+**A Questionnaire Measures What Vendors Say.** Evidence narrows the gap between saying and doing, and nothing closes it. No score or color in here certifies that a vendor is secure.
 
 **No Warranty.** As-is. No promises, express or implied. I'm not liable for what happens when you use it.
 

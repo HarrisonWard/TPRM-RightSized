@@ -4,16 +4,17 @@ Contributions welcome. **No One Is as Dumb as All of Us**, which is exactly why 
 
 ## Useful
 
-- Corrections. Something's wrong here, tell me.
-- Sector versions, especially industries I haven't spent much time in.
-- Rewrites that say the same thing in fewer words. Especially these.
-- Real notes on what worked and what didn't.
+- Sector question sets: healthcare, financial services, public sector, anywhere the base questionnaires need different teeth.
+- Contract language that survived a real negotiation, scrubbed clean, with a note on what the vendor pushed back on.
+- Monitoring sources that work on no budget. The free-signal list can always grow.
+- Chasing stories: what actually got a silent vendor to answer. This is the folklore file of the repo and the most requested kind of contribution.
+- Rewrites that say the same thing in fewer words. Especially the questionnaires, every deleted question is a gift.
 
 ## Not Useful
 
 - Anything client-identifiable. No company names, no anonymized-but-obvious details, nothing lifted from a real engagement.
-- Vendor promotion. Tool mentions are fine when they earn their place. Marketing isn't.
-- Scope creep into things this repo is deliberately not about. See the README.
+- Vendor promotion, including TPRM platforms and ratings services. Tool mentions are fine when they earn their place. Marketing isn't.
+- Questions that do not change a decision. The 300-question form is the disease this repo treats.
 
 ## How
 
@@ -23,11 +24,11 @@ Open an issue first for anything big so we can agree on the shape before you spe
 
 Plain English. If a sentence needs a second read, rewrite it.
 
-Second person. "You must," not "The organization shall."
+Questions get asked the way you would ask them on a call, not in procurement-speak.
 
 Say why, not just what.
 
-Short. Length isn't thoroughness.
+Short. Length isn't thoroughness, and in vendor risk it is usually the opposite.
 
 ## License
 
